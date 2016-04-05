@@ -1,0 +1,35 @@
+body{
+    background-color:#4CD;
+}
+
+.container{
+   
+    
+}
+
+.row{
+   display: flex;
+}
+
+.number-row button{
+    margin: 3% auto;  /* Magic! */  
+    font-size:4em;
+    border-radius: 51px;
+    color:white;
+    background-color:#333;
+    padding:6%;
+    
+}
+
+.number-row #zero {
+        margin-top: 5%;
+        width: 87%;
+}
+
+#inputField{
+    font-size: 6em;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+}
