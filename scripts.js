@@ -11,8 +11,21 @@ function clearInput() {
 }
 
 function calculate() {
+    var replacePi = document.getElementById('inputField').value.replace(/\&#960;/g, 'Math.PI');
+    console.log(replacePi);
     var inputText = eval(document.getElementById('inputField').value);
-    var length = inputText.length
+    inputField.value = (inputText);
+}
+
+function insertPi() {
+    var numberPi = 3.14;
+    var inputText = document.getElementById('inputField').value;
+    inputField.value = (inputText + numberPi);
+}
+
+function backspace() {
+    var inputText = document.getElementById('inputField').value;
+    inputText = inputText.slice(0, -1);
     inputField.value = (inputText);
 }
 
@@ -23,6 +36,7 @@ document.getElementById('inputField').onkeypress=function(e){
         inputField.value = (inputText);
     }
 }
+
 
 
 

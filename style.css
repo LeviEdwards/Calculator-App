@@ -33,3 +33,19 @@ body{
     margin-left: 10%;
     height: 100px;
 }
+
+#backspace{
+    width:42%;
+}
+
+/*@media (min-width: 531px) {
+  .wrapper{
+    max-width:92%;
+}
+}*/
+
+@media (min-width: 1080px) {
+  .wrapper{
+    max-width:30%;
+}
+}
