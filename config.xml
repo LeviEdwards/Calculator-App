@@ -1,77 +1,20 @@
-<!-- this is the xml declaration -->
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
 
-<!-- our widget node must have two XML lane spaced defined
-one for the W3C widget spec and one for the PhoneGap spec, these values are the same from app to app -->
-<widget xmlns = "http://www.w3.org/ns/widgets"
-	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id        = "com.eitcwebdev.hunt"
-	versionCode="1"
-	version   = "1.0">
-	
-<!-- name and description of the application -->
-<name>Calculator</name>
-<description>
-A sample app forPhoneGap Build		
-</description>
+    <!-- versionCode is optional and Android only -->
 
-<!-- author's info -->
-<author href="leviaaron.com" 
-email="leviaaron@gmail.com">
-Julie Anderson
-</author>
+    <name>Calculator</name>
 
-<!-- by default PhoneGap builds for all platform, if you want only certain platforms you can specify that here -->
-<gap:platform name="ios" />
-<gap:platform name="android" />
-<gap:platform name="winphone" />
+    <description>
+        An example for phonegap build docs. 
+    </description>
 
+    <author href="https://build.phonegap.com" email="support@phonegap.com">
+    	Levi Edwards 
+    </author>
 
-<!-- define icon when installed on Android devices -->
-<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
-<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
-<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
-<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-<icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
-
-<!--splash screen for iOS - they must be included for iOS -->
-<gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
-<gap:splash src="res/screen/ios/screen-iphone-landscape.png" gap:platform="ios" width="480" height="320" />
-<gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
-<gap:splash src="res/screen/ios/screen-iphone-landscape-2x.png" gap:platform="ios" width="960" height="640" />
-<gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
-<gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024 " />
-<gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
-<gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png" gap:platform="ios" width="1536" height="2008" />
-<gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png" gap:platform="ios" width="2048" height="1496" />
-
-<!--splash screen for Android - optional -->
-<gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
-
-<!-- device features the app will have access to - asks user permission for Android-->
-<feature name="http://api.phonegap.com/1.0/camera"/>
-<feature name="http://api.phonegap.com/1.0/file"/>
-<feature name="http://api.phonegap.com/1.0/geolocation"/>
-<feature name="http://api.phonegap.com/1.0/network"/>
-
-<!-- plug-ins for apps to run correctly -->
-<gap:plugin name="org.apache.cordova.camera"  />
-<gap:plugin name="org.apache.cordova.geolocation"  />
-<gap:plugin name="org.apache.cordova.dialogs"  />
-<gap:plugin name="org.apache.cordova.device"  />
-<gap:plugin name="org.apache.cordova.network-information"  />
-<gap:plugin name="org.apache.cordova.console"  />
-<gap:plugin name="org.apache.cordova.inappbrowser"  />
-<gap:plugin name="org.apache.cordova.network-information"  />
-<gap:plugin name="org.apache.cordova.splashscreen"  />
-
-<!-- 3rd party plug-ins -->
-<gap:plugin name="com.phonegap.plugins.barcodescanner" />
-
-<!-- access element to enable our app to be able to access external resources, * is everything-->
-<access origin="*" subdomains="true" />
-
+</widget>
